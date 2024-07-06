@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+main {
+  /* background-color: #232323; */
+  background-color: #8BC6EC;
+  background-color: #0093E9;
+  background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);  
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.githubCard{
+  margin-top: 80px;
+  padding: 20px;
+  height: fit-content;
+  width: 325px;
+  background-color: white;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: black;
+  text-align: center;
+}
+
+.profilePhoto{
+  height: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-35%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.githubCard h2{
+  margin-top: 130px;
+  font-size: 1.3rem;
+  color: #34495e;
+}
+.githubCard> h4{
+  padding-inline: 50px;
+  margin-top: 10px;
+  color: #7f8c8d;
+}
+.info{
+  margin-top: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.count{
+  font-size: 1.1rem;
+}
+.titleF{
+  margin-top: 5px;
+  color: #7f8c8d;
+}
+.reposContainer{
+  padding-inline: 30px;
+  margin-top: 15px;
+  text-align: start;
+}
+.repos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding-top: 10px;
+}
+.repo{
+  background-color: #34495e;
+  width: fit-content;
+  font-size: 0.8rem;
+  display: inline-block;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.repo:hover{
+  background-color: #2c3e50;
+}
+
+.visit{
+  display: block;
+  margin-top: 20px;
+  background-color: #2980b9;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 10px 15px;
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.visit:hover{
+  background-color: #0093E9;
+}
+.share{
+  font-size: 1rem;
+}
+
+/* search bar */
+.search{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: scale 0.3s ease-in-out;
+  font-size: 1rem;
+  padding-right: 40px;
+}
+.searchBar{
+  position: relative;
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.search:focus{
+  border: none;
+  outline: none;
+}
+.search-icon{
+  color: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  top: 0;
+  cursor: pointer;
+}
+.search-icon:hover{
+  background-color: #0093E9;
+  color: white;
+}
+
+
+.noUser{
+  margin-top: 10px;
+  padding: 20px;
+  width: 325px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+}
